@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <title>Cyber-Bullying</title>
+    <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="../sketch.js"></script>
+</head>
+<body>
+<div id="navbar">
+    <a href="../index.html">Home</a>
+    <a href="page1.html">Stories</a>
+    <a href="page2.html">Contact</a>
+</div>
+<br><br>
+    <h3>Our community can be your <span>superhero</span>  and save you life. Get in touch with us</h3>
+
+
+<div class="container">
+    <form id="contact" action="" method="post">
+        <h3>Quick Contact</h3>
+        <h4>Contact us today, and you will get a reply with in 24 hours!</h4>
+        <fieldset>
+            <input placeholder="Pseudonym" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your Email Address (optional)" type="email" tabindex="2">
+        </fieldset>
+        <fieldset>
+            <input placeholder="Your age (optional)" type="tel" tabindex="3" >
+        </fieldset>
+        <fieldset>
+            <input placeholder="State" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <textarea placeholder="Share your story here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+
+    <h2>All the information that you decide to share with us will remain confidential &#128522</h2>
+</div>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-80px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+</body>
+</html>
